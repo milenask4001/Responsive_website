@@ -86,20 +86,22 @@
   .star-icon {
     width: 32px;
     height: 32px;
+    margin-bottom: 20px;
+    display: flex;
   }
 
   .heading-element {
     list-style: none;
   }
 
-  .heading-element .heading-title {
+  .heading-title {
     letter-spacing: -.2px;
     color: #1c1c1c;
     font-size: 20px;
     font-weight: 600;
   }
 
-  .heading-element .heading-paragraph {
+  .heading-paragraph {
     text-align: left;
     letter-spacing: -.2px;
     color: #585757;
@@ -107,7 +109,7 @@
     font-weight: 300;
   }
 
-  .heading-element .learn-more {
+  .learn-more {
     color: #24afb5;
     letter-spacing: -.1px;
     margin-bottom: 10px;
