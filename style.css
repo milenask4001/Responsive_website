@@ -53,6 +53,12 @@
     /* border-style: none; */
     border-color: rgb(168 162 158);
     margin-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .email-area::placeholder {
+font-size: 20px;
+
   }
   .subscribe-btn {
     width: 120px;
