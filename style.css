@@ -3,17 +3,25 @@
   src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
   body {
-    margin: 10px 15px;
+    /* margin: 10px 15px; */
+    margin-top: 20px;
+    min-height: 100vh;
     font-family: Inter;
+    overflow-x: hidden;
+    /* position: relative; */
+    
+    
   }
   header {
     font-weight: 700;
     font-size: 20px;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
   }
   .logo {
     width: 36px;
@@ -32,8 +40,12 @@
     display: flex;
     justify-content: end;
   }
+
+
+
   .subscribe {
     text-align: center;
+   
   }
   .subscribe-header {
     font-size: 36px;
@@ -43,6 +55,9 @@
     letter-spacing: -0.3px;
     font-weight: 300;
     font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   
   }
 
   .email-area {
@@ -60,7 +75,7 @@
   }
   .subscribe-btn {
     width: 120px;
-    height: 50;
+    height: 48px;
     background-color: #24b0b5;
     border-radius: 5px;
     border-style: none;
@@ -75,16 +90,22 @@
     font-size: 13px;
     letter-spacing: -0.3px;
   }
-  .paragraph {
+  .paragraph p {
     /* height: 256px;
     width: 290px; */
     font-size: 24px;
     font-weight: 500;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
     /* border-bottom: 1px #969696 solid; */
   }
+.heading-list {
+  margin-top: 60px;
+  margin-bottom: 40px;
 
+}
   .star-icon {
     width: 32px;
     height: 32px;
@@ -94,6 +115,10 @@
 
   .heading-element {
     list-style: none;
+    
+  }
+  .heading-element li {
+    margin-bottom: 20px;
   }
 
   .heading-title {
@@ -114,7 +139,7 @@
     color: #24afb5;
     letter-spacing: -0.1px;
     font-weight: 500;
-    margin-bottom: 10px;
+   
   }
 
   .statistic-number {
@@ -243,22 +268,174 @@
   }
 
   footer {
+   
+    position:absolute;
+   min-width: 100vw;
+
     background-color: #f7f7f7;
     color: #969696;
     font-size: 13px;
     letter-spacing: -0.1px;
     line-height: 18px;
-    padding: 0;
-    margin: 0;
-    max-height: 100vh;
-    max-width: 100vw;
+   /* min-width: 100%;
+   min-height: 100%;
+     */
+    
+   
+    
   }
   footer ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    list-style: none;
-    align-items: flex-start;
-    justify-content: space-around;
-   }
+    justify-content: flex-start;
+  }
+  /* footer .copyright {
+    margin-left: auto;
+  } */
+  hr {
+    
+    border: none;
+    height: 1px;
+    background-color: #969696;
 }
+
+@media screen and (max-width:768px){
+  header nav span, 
+  .steps-heading2, 
+  .steps-introduction2,
+  .arrow-right
+ {
+    visibility: hidden;
+    display: none;
+  }
+ 
+  
+}
+
+
+@media screen and (min-width: 768px){
+
+nav .nav-icon {
+  visibility: hidden;
+    display: none;
+}
+nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+   width: 50vw;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+}
+
+.subscribe-paragraph {
+  max-width: 730px;
+  max-height: 60px;
+
+}
+.paragraph p {
+  max-width: 730px;
+  max-height: 230px;
+}
+.heading-element {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  gap:20px;
+}
+.statistics {
+margin: 50px auto 50px 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px 100px;
+}
+
+ .steps-heading, 
+.steps-introduction,
+.arrow {
+  visibility: hidden;
+  display: none;
+}
+
+
+.steps-heading2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #1c1c1c;
+}
+
+.steps-introduction2 {
+  max-width: 730px;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  font-weight: 200;
+  color: #585757;
+  
+margin-left:auto;
+margin-right: auto;
+}
+.arrow-right {
+  width: 31px;
+  height: 30px;
+}
+.steps-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.astronomy {
+  display: flex;
+  margin-left:  80px;
+  margin-right: 80px;
+ 
+ gap: 40px;
+}
+.articles {
+  margin-right: 80px;
+  margin-left: auto;
+
+}
+.articles ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+ gap: 10px;
+  
+}
+.article-title {
+  width: 16rem;
+}
+
+.article-description {
+  width: 13.75rem;
+}
+
+.footer {
+background-color: #24b0b5;
+
+}
+
+.footer-elements {
+
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-evenly;
+ align-items: center;
+ 
+}
+
+
+
+
+}
+} /*jeden nawias gdzie?
