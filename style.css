@@ -28,6 +28,7 @@
     height: 36px;
   }
   .logo-section {
+    margin-left: 10px;
     width: 136px;
     display: flex;
     justify-content: start;
@@ -43,9 +44,10 @@
 
 
 
-  .subscribe {
+   .subscribe {
     text-align: center;
-   
+    
+
   }
   .subscribe-header {
     font-size: 36px;
@@ -90,6 +92,7 @@
     font-size: 13px;
     letter-spacing: -0.3px;
   }
+ 
   .paragraph p {
     /* height: 256px;
     width: 290px; */
@@ -98,8 +101,6 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
-    /* border-bottom: 1px #969696 solid; */
   }
 .heading-list {
   margin-top: 60px;
@@ -141,6 +142,11 @@
     font-weight: 500;
    
   }
+  .statistics {
+    margin-left: 40px;
+    margin-right:auto;
+   
+  }
 
   .statistic-number {
     font-size: 64px;
@@ -159,6 +165,8 @@
   .steps {
     display: block;
     text-align: center;
+    margin-top:40px;
+    margin-bottom: 40px;
   }
   .steps-heading {
     font-size: 36px;
@@ -198,6 +206,12 @@
     font-weight: 300;
     color: #585757;
   }
+  .astronomy {
+    display: flex;
+    align-items: center;
+    
+
+  }
   .astronomy-heading {
     font-size: 36px;
     font-weight: 700;
@@ -209,22 +223,38 @@
     letter-spacing: -0.3px;
     line-height: 30px;
     font-weight: 300;
+    text-align: left;
     color: #585757;
+    max-width: 540px;
   }
+  
   .astronomy .learn-more {
     font-size: 20px;
     letter-spacing: -0.2px;
     line-height: 20px;
+    
   }
   .astronomy .phone {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+   width: 400px;
+   
+   
+   
   }
-  .articles {
+  .astronomy-description {
+    margin-left: 40px;
+  }
+
+
+   .articles {
     margin-top: 40px;
-  }
+    margin-left: 40px; 
+   
+  
+  } 
   .articles ul {
     list-style: none;
   }
@@ -280,10 +310,9 @@
    /* min-width: 100%;
    min-height: 100%;
      */
-    
    
-    
   }
+
   footer ul {
     list-style-type: none;
     display: flex;
@@ -299,18 +328,22 @@
     border: none;
     height: 1px;
     background-color: #969696;
+    
 }
-
+}
 @media screen and (max-width:768px){
   header nav span, 
   .steps-heading2, 
   .steps-introduction2,
-  .arrow-right
- {
+  .arrow-right{
     visibility: hidden;
     display: none;
+
+   
   }
- 
+  .astronomy {
+    flex-direction: column;
+  }
   
 }
 
@@ -407,9 +440,7 @@ margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
-
- gap: 10px;
+  gap: 10px;
   
 }
 .article-title {
@@ -419,7 +450,7 @@ margin-right: auto;
 .article-description {
   width: 13.75rem;
 }
-
+/* Footer doesn't fill all page */
 .footer {
 background-color: #24b0b5;
 
@@ -437,5 +468,5 @@ background-color: #24b0b5;
 
 
 
+
 }
-} /*jeden nawias gdzie?
